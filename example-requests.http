@@ -1,0 +1,55 @@
+### FID
+POST http://localhost:3000/analytics
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:3000
+Referer: http://localhost:3000/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36
+sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="101", "Google Chrome";v="101"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Content-Type: text/plain;charset=UTF-8
+
+{"name":"FID","value":20.799999952316284,"delta":20.799999952316284,"entries":[{"name":"pointerdown","entryType":"first-input","startTime":3942.8000000715256,"duration":24,"processingStart":3963.600000023842,"processingEnd":3964.8000000715256,"cancelable":true}],"id":"1653406626195-1397180729701","isFinal":true}
+
+### CLS
+
+POST http://localhost:3000/analytics
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:3000
+Referer: http://localhost:3000/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36
+sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="101", "Google Chrome";v="101"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Content-Type: text/plain;charset=UTF-8
+
+{"name":"CLS","value":0.040045536560631693,"delta":0.040045536560631693,"entries":[{"name":"","entryType":"layout-shift","startTime":537.5,"duration":0,"value":0.040045536560631693,"hadRecentInput":false,"lastInputTime":0,"sources":[{"previousRect":{"x":116,"y":449,"width":4888,"height":66,"top":449,"right":5004,"bottom":515,"left":116},"currentRect":{"x":0,"y":0,"width":0,"height":0,"top":0,"right":0,"bottom":0,"left":0}},{"previousRect":{"x":116,"y":543,"width":4888,"height":66,"top":543,"right":5004,"bottom":609,"left":116},"currentRect":{"x":0,"y":0,"width":0,"height":0,"top":0,"right":0,"bottom":0,"left":0}},{"previousRect":{"x":116,"y":637,"width":4888,"height":66,"top":637,"right":5004,"bottom":703,"left":116},"currentRect":{"x":0,"y":0,"width":0,"height":0,"top":0,"right":0,"bottom":0,"left":0}},{"previousRect":{"x":116,"y":731,"width":4888,"height":66,"top":731,"right":5004,"bottom":797,"left":116},"currentRect":{"x":0,"y":0,"width":0,"height":0,"top":0,"right":0,"bottom":0,"left":0}}]}],"id":"1653406626194-9831486466723","isFinal":false}
+
+### LCP
+
+POST http://localhost:3000/analytics
+Accept: */*
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Origin: http://localhost:3000
+Referer: http://localhost:3000/
+Sec-Fetch-Dest: empty
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Site: same-origin
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.64 Safari/537.36
+sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="101", "Google Chrome";v="101"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "macOS"
+Content-Type: text/plain;charset=UTF-8
+
+{"name":"LCP","value":991,"delta":991,"entries":[{"name":"","entryType":"largest-contentful-paint","startTime":113.3,"duration":0,"size":80487,"renderTime":113.3,"loadTime":0,"firstAnimatedFrameTime":0,"id":"","url":""},{"name":"","entryType":"largest-contentful-paint","startTime":991,"duration":0,"size":356000,"renderTime":0,"loadTime":991,"firstAnimatedFrameTime":0,"id":"","url":"https://images.unsplash.com/photo-1564865878688-9a244444042a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540"}],"id":"1653406626195-4856893843147","isFinal":true}

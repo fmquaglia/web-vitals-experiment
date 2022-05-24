@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Test</title>
+  <script type="text/javascript"
+          src="https://unpkg.com/web-vitals@0.2.4/dist/web-vitals.es5.umd.min.js"
+          crossorigin="anonymous"></script>
+  <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+<article>
+  <header>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+  </header>
+  <main>
+    <h2>Subtitle</h2>
+    <aside>
+      <img
+        width="800"
+        src="https://images.unsplash.com/photo-1564865878688-9a244444042a?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3540"
+        alt="the way to live long">
+    </aside>
+    <p>bassus, dexter fugas aegre visum de noster, brevis ausus.
+      rusticus, dexter eras etiam dignus de varius, germanus agripeta.
+      fatalis, raptus calceuss nunquam prensionem de domesticus, varius decor.
+      velox, superbus cedriums semper promissio de neuter, fortis adiurator.
+      cum rumor experimentum, omnes vigiles consumere rusticus, primus nixes.
+      clemens planetas ducunt ad habitio?</p>
+    <p>cum burgus unda, omnes tataes visum emeritis, festus vigiles.
+      cum tumultumque crescere, omnes homoes amor bi-color, ferox fideses.
+      germanus, varius diatrias foris imperium de neuter, magnum uria.
+      cum cacula velum, omnes mensaes anhelare azureus, altus lunaes.
+      velox, pius amicitias mechanice fallere de brevis, germanus amor.
+      adelphiss observare, tanquam varius stella?</p>
+    <p>cum lacta volare, omnes fraticinidaes tractare velox, peritus lunaes.
+      cum brabeuta accelerare, omnes parses perdere audax, regius burguses.
+      cum competition mori, omnes musaes demitto camerarius, regius lubaes.
+      altus, ferox castors virtualiter talem de bi-color, talis luna.
+      cum messor peregrinationes, omnes adiuratores tractare teres, ferox cedriumes.
+      itineris tramitems mori, tanquam salvus urbs?</p>
+    <p>audax, rusticus assimilatios vix experientia de altus, pius competition.
+      cum secula cadunt, omnes victrixes locus camerarius, teres hydraes.
+      cum uria cantare, omnes elevatuses experientia talis, raptus abnobaes.
+      cum acipenser peregrinatione, omnes brabeutaes imperium emeritis, bi-color deuses.
+      flavum, fortis tuss cito imperium de varius, fidelis consilium.
+      peritus medicinas ducunt ad lixa?</p>
+
+  </main>
+
+</article>
+
+
+<script type="text/javascript">
+  function sendToAnalytics (metric) {
+    const body = JSON.stringify(metric);
+    console.log(body);
+    // Use `navigator.sendBeacon()` if available, falling back to `fetch()`.
+    (navigator.sendBeacon && navigator.sendBeacon('/analytics', body)) ||
+    fetch('/analytics', {body, method: 'POST', keepalive: true});
+  }
+
+  window.webVitals.getCLS(sendToAnalytics);
+  window.webVitals.getFID(sendToAnalytics);
+  window.webVitals.getLCP(sendToAnalytics);
+</script>
+</body>
+</html>
